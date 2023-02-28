@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio2</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+  var penultimo = 0;
+  var ultimo = 1;
+  var resultado = 0;
+  var entrada = 342; //nùmero que sera testado no fibonacci.
+  var eFibonacci = false
+        
+        while(resultado < entrada){
+            
+            resultado = ultimo + penultimo;
+            penultimo = ultimo;
+            ultimo = resultado;
+            if (entrada == resultado){
+             eFibonacci = true
+            }
+
+            console.log(resultado);
+
+        }
+
+        if(eFibonacci) {
+            console.log("esse número esta na sequencia fibonacci")
+        } else{
+            console.log("esse número não esta na sequencia fibonacci")
+        }
+        
+
+        
+       
+    </script>
+    
+</body>
+</html>
